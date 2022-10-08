@@ -1,1 +1,5 @@
 Misc. convenience scripts.
+
+gh now has so many levels of login auth it's almost pointless to use it
+for anything you want to access easily;
+I'll probably move this somewhere else.
