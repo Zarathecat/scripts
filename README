@@ -1,5 +1,21 @@
 Misc. convenience scripts.
 
 gh now has so many levels of login auth it's almost pointless to use it
-for anything you want to access easily;
-I'll probably move this somewhere else.
+Too slow to do anything; I'll probably move this somewhere else.
+
+Installs
+--------
+
+Todo: get nice list of things I always use that don't come on distros
+by default, so I can install them right away. git, vim...
+
+Configs
+-------
+
+Todo: same, but settings.
+
+Etherpad
+--------
+
+Etherpad service lives at /etc/systemd/system/etherpad.service
+enable with `sudo systemctl enable etherpad.service`
