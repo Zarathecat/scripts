@@ -1,21 +1,48 @@
-Misc. convenience scripts.
+Misc. convenience scripts. And config. Do not expect pretty code within. :)
+They're odds and ends that I want to back up somewhere, and I've finally
+got round to making my github acct usable again.
 
-gh now has so many levels of login auth it's almost pointless to use it
-Too slow to do anything; I'll probably move this somewhere else.
-
-Installs
---------
-
-Todo: get nice list of things I always use that don't come on distros
-by default, so I can install them right away. git, vim...
-
-Configs
+Scripts
 -------
 
-Todo: same, but settings.
+pyserv.py is a simple https server you can run from some directory.
+It's (reluctantly) written in python3.
+I use it to test godot web exports on other devices in my home network,
+since audio won't work without SSL.
+You'll have to generate your certs yourself; I used `mkcert localhost`.
+Then add the paths manually.
+
+compress.py converts all mp3s in some directory to a very low bitrate.
+It outputs the files in the directory it's run from, so run it in a
+different directory to the one with the input files to keep things organised.
+You need lame installed. Useful for game sounds and that kind of thing.
 
 Etherpad
 --------
 
 Etherpad service lives at /etc/systemd/system/etherpad.service
 enable with `sudo systemctl enable etherpad.service`
+
+get_etherpads.py gets all etherpads at some host and saves them to
+text files in a directory. You need to have the etherpad admin info to
+run it, since you need to be able to access the page that lists all pads.
+Pad address and admin-list-page address must be saved to two files, because
+this code was written with extreme laziness. Includes a painful timeout hack.
+It's in python 2.7. Again, code here is pure trash. But it works.
+
+And here's something you may need at some point: 
+https://stackoverflow.com/a/17794626
+
+Configs
+-------
+
+.vimrc has config to treat ctrl+z as `u` , and some nice linewrap stuff
+
+.bashrc sets my history to max, and aliases my godot binary.
+
+
+Installs
+--------
+
+Todo: get nice list of things I always use that don't come on distros
+by default, so I can install them right away. git, vim...
