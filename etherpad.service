@@ -4,7 +4,7 @@ Description=Start etherpad
 [Service]
 Type=oneshot
 User=ubuntu
-ExecStart=/bin/bash -c "/home/ubuntu/etherpad-lite/src/bin/run.sh"
+ExecStart=/bin/bash -c "/home/ubuntu/etherpad-lite/bin/run.sh"
 
 [Install]
 WantedBy=multi-user.target
